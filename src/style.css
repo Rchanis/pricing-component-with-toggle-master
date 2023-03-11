@@ -1,3 +1,40 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.card {
+    width: 351px;
+    height: 456px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 72px 96px 192px 1fr;
+    grid-template-areas:
+        "level"
+        "price"
+        "attr"
+        "learn-more";
+    justify-items: center;
+    align-items: center;
+}
+
+.card .level {
+    grid-area: level;
+}
+
+.card .price {
+    grid-area: price;
+}
+
+.annually-price {
+    display: none;
+}
+
+.card .attr {
+    grid-area: attr;
+}
+
+.card .learn-more {
+    grid-area: learn-more;
+}
