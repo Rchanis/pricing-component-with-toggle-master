@@ -64,7 +64,7 @@ body {
     color: hsl(232, 13%, 33%);
 }
 
-.annually-price {
+.monthly-price {
     display: none;
 }
 
@@ -205,8 +205,6 @@ hr {
     -webkit-transition: .4s;
     transition: .4s;
 }
-
-input:checked+.slider {}
 
 input:focus+.slider {
     box-shadow: 0 0 1px hsl(237, 36%, 43%);
