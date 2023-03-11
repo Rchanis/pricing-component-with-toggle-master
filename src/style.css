@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.938rem;
+    font-weight: 700;
+    background-color: hsl(240, 78%, 98%);
 }
 
 .pricing-grid {
@@ -23,15 +25,19 @@ body {
         "learn-more";
     justify-items: center;
     align-items: center;
+    background-color: white;
+    color: hsl(233, 13%, 49%);
 }
 
 .card .level {
     grid-area: level;
+
 }
 
 .card .price {
     grid-area: price;
     font-size: 3.75rem;
+    color: hsl(232, 13%, 33%);
 }
 
 .annually-price {
@@ -53,16 +59,32 @@ body {
 
 hr {
     width: 100%;
+    border: 0.5px solid hsl(240, 14%, 90%);
+    border-radius: 1px;
 }
 
-.card .learn-more {
+.learn-more:link,
+.learn-more:visited {
     grid-area: learn-more;
     text-decoration: none;
     background-image: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     width: 85%;
-    height: 40px;
+    height: 45px;
     display: grid;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.learn-more:hover {
+    background-image: linear-gradient(90deg, hsl(236, 35%, 65%), hsl(237, 36%, 43%));
+}
+
+.learn-more:active {
+    background-color: white;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background-image: none;
 }
