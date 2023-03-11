@@ -5,6 +5,20 @@ body {
     background-color: hsl(240, 78%, 98%);
 }
 
+.bg-top {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-bottom {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
